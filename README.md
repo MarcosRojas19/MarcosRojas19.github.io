@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taller Especialista en Ford - Rápido, Preciso y Profesional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #4b5563;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Navbar y footer */
+        .navbar-custom {
+            background-color: #1e40af;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #bfdbfe;
+            font-weight: 600;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #93c5fd;
+            transition: color 0.3s ease;
+        }
+        footer.custom-footer {
+            background-color: #1e40af;
+            color: #bfdbfe;
+            font-weight: 500;
+        }
+        footer.custom-footer a {
+            color: #93c5fd;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer.custom-footer a:hover {
+            color: #bfdbfe;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        header.hero {
+            background: linear-gradient(135deg, #2563eb, #93c5fd);
+            border-radius: 0.75rem;
+            margin: 2rem auto 4rem auto;
+            max-width: 1200px;
+            padding: 4rem 2rem;
+            box-shadow: 0 8px 24px rgb(37 99 235 / 0.3);
+        }
+        header.hero h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        header.hero p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Tarjetas */
+        .card {
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgb(0 0 0 / 0.15);
+        }
+        .card-title {
+            font-weight: 600;
+            color: #1e40af;
+        }
+        .card-text {
+            color: #374151;
+        }
+        h2 {
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 2rem;
+        }
+        /* Botón */
+        .btn-success {
+            background-color: #22c55e;
+            border-color: #22c55e;
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            font-size: 1.25rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-success:hover {
+            background-color: #16a34a;
+            border-color: #16a34a;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        section {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        section.bg-light {
+            background-color: #f9fafb;
+        }
+        .text-center {
+            text-align: center !important;
+        }
+        @media (max-width: 767px) {
+            header.hero h1 {
+                font-size: 2.25rem;
+            }
+            header.hero p {
+                font-size: 1.125rem;
+            }
+            .btn-success {
+                font-size: 1rem;
+                padding: 0.75rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de nav -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DR Auto HN</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Alternar navegación"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio"
+                          >Inicio</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Panel -->
+    <header class="hero text-white text-center" id="inicio">
+        <div class="container">
+            <h1>Especialistas Ford</h1>
+            <p>Expertos en mantenimiento y reparación con garantía y trato personalizado.</p>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <div class="container">
+            <h2 class="text-center">Nuestros Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img
+                          src="https://placehold.co/600x400/png?text=Mantenimiento+Ford&font=roboto"
+                          class="card-img-top"
+                          alt="Servicio Mantenimiento Ford"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Mantenimiento Preventivo</h5>
+                            <p class="card-text">Cuida tu Ford con revisiones periódicas que aseguran su máximo rendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img
+                          src="https://placehold.co/600x400/png?text=Reparación+Especializada&font=roboto"
+                          class="card-img-top"
+                          alt="Servicio Reparación Especializada"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Reparaciones Especializadas</h5>
+                            <p class="card-text">Diagnóstico preciso y soluciones rápidas para cualquier problema mecánico o eléctrico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img
+                          src="https://placehold.co/600x400/png?text=Asesoría+Profesional&font=roboto"
+                          class="card-img-top"
+                          alt="Servicio Asesoría Profesional"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Asesoría Profesional</h5>
+                            <p class="card-text">Te guiamos en las mejores decisiones para mantenimiento y mejoras de tu vehículo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de Nosotros -->
+    <section id="acerca" class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Acerca de Nosotros</h2>
+            <p class="text-center fs-5">
+                Taller especializado en vehículos Ford con años de experiencia, ofreciendo rapidez, precisión y un servicio profesional y confiable.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <p class="text-center fs-5 mb-4">
+              Contáctanos para agendar tu cita o resolver dudas sobre nuestros servicios especializados Ford.
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-success btn-lg">Enviar Mensaje</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie-->
+    <footer class="custom-footer text-center py-4">
+        <p class="mb-2">
+            info@drautohn.com | Teléfono: +504 3456 7890
+        </p>
+        <div>
+            <a href="#" class="me-3">Facebook</a>
+            <a href="#" class="me-3">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    ></script>
+</body>
+</html>
